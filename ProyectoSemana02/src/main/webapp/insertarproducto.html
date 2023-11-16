@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>AltaProductos</title>
+</head>
+<body>
+
+	<h1>Alta de productos</h1>
+	<form action="AltaProducto" method="post">
+		<div class="form-group">
+			<label id="nombre">Nombre del producto: </label><br>
+			<input id="nombre" type="text" name="nombre" required>
+		</div><br>
+		<div class="form-group">
+			<label id="seccion">Seccion: </label><br>
+			<select id="seccion" name="seccion" class="form-control" required>
+				<option value="Alimentación">Alimentaci&oacute;n</option>
+				<option value="Perfumería">Perfumer&iacute;a</option>
+				<option value="Electrónica">Electr&oacute;nica</option>
+				<option value="Higiene y Salud">Higiene y Salud</option>
+				<option value="Ropa">Ropa</option>
+			</select>
+		</div><br>
+		<div class="form-group">
+			<label id="precio">Precio del producto: </label><br>
+			<input id="precio" type="number" name="precio" required>
+		</div><br>
+		<div class="form-group">
+			<label id="stock">Cantidad en stock del producto: </label><br>
+			<input id="stock" type="number" name="stock" required>
+		</div><br>
+		<input type="submit" value="Dar del alta el producto">
+	</form>
+</body>
+</html>
